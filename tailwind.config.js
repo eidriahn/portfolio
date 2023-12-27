@@ -5,6 +5,9 @@ export default {
     extend: {
       fontFamily: {
         sans: ["Sora Variable", "sans-serif"]
+      },
+      fontSize: {
+        "hero-title": "3rem"
       }
     }
   },
