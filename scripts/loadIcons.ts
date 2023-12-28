@@ -1,3 +1,3 @@
-import { Github, Linkedin, Twitter, createIcons } from "lucide";
+import { GitBranchPlus, Github, Linkedin, Twitter, createIcons } from "lucide";
 
-createIcons({ icons: { Linkedin, Github, Twitter } });
+createIcons({ icons: { Linkedin, Github, Twitter, GitBranchPlus } });
