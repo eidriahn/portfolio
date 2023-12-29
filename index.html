@@ -86,7 +86,22 @@
           </button>
         </div>
       </div>
-
+      <section
+        name="github-contributions"
+        id="github-contributions"
+        class="lg:px-20 lg:py-16 px-4 py-10"
+      >
+        <h2 class="text-center text-3xl lg:text-5xl mb-20">
+          Github <strong>Stats</strong>
+          <br />
+          <span class="text-gray-400 text-sm"> (not that they matter) </span>
+        </h2>
+        <p class="text-slate-500 mb-1 text-center" id="contributionsCount"></p>
+        <div
+          class="card mx-auto flex justify-between gap-1 overflow-scroll pt-10 z-10"
+          id="weeks"
+        ></div>
+      </section>
       <section name="hero" class="lg:px-20 lg:pt-14 lg:pb-8 p-4">
         <div class="lg:flex lg:flex-row-reverse mb-10">
           <div class="relative w-full lg:w-[55%] mb-12 lg:mb-0">
@@ -214,6 +229,7 @@
           </a>
         </div>
       </section>
+
       <section name="skills" class="lg:px-20 lg:py-16 px-4 py-10">
         <h2 class="text-center text-3xl lg:text-5xl mb-20">
           My <strong>Skills</strong>
@@ -625,6 +641,7 @@
     <script src="https://unpkg.com/lucide@latest"></script>
     <script type="module" src="scripts/menuButton.ts"></script>
     <script type="module" src="scripts/loadIcons.ts"></script>
+    <script type="module" src="scripts/getContributions.ts"></script>
   </body>
   <script id="functions/helpers">
     const navlink = (path) => {
