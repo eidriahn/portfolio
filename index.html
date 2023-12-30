@@ -20,6 +20,14 @@
         .card {
           @apply rounded-xl py-8 px-6 border-2 border-zinc-500 mb-8;
         }
+
+        .outlined-text {
+          @apply text-white tracking-widest [text-shadow:_-2px_-2px_0_#000,_2px_-2px_0_#000,_-2px_2px_0_#000,_2px_2px_0_#000];
+        }
+
+        .input {
+          @apply text-base px-6 py-4 rounded border-2 border-black w-full;
+        }
       }
 
       /* sora-latin-wght-normal */
@@ -51,9 +59,7 @@
         </nav>
       </div>
       <div class="p-4 lg:py-6 lg:px-20">
-        <div
-          class="flex container max-w-7xl mx-auto justify-between lg:justify-between h-14"
-        >
+        <div class="flex container max-w-7xl mx-auto justify-between h-14">
           <div class="flex gap-3 items-center">
             <svg
               width="40"
@@ -64,14 +70,14 @@
             >
               <path
                 d="M31.53 14.212c0 4.67-2.768 8.696-6.75 10.523a7.576 7.576 0 0 0-4.667-13.415c-.056-.003-.105-.003-.16-.003-.055 0-.104 0-.16.003a2.894 2.894 0 0 0-2.734 2.89v14.471a8.685 8.685 0 0 1-8.683 8.683V14.212c0-6.393 5.184-11.577 11.577-11.577 6.392 0 11.576 5.184 11.576 11.577Z"
-                fill="#000"
+                fill="currentColor"
               />
               <path
                 d="M22 16.258a2.894 2.894 0 1 0-4.094-4.093A2.894 2.894 0 0 0 22 16.258Z"
-                fill="#000"
+                fill="currentColor"
               />
-              <h5 class="text-xl font-bold">Adrian Luca</h5>
             </svg>
+            <h5 class="text-xl font-bold">Adrian Luca</h5>
           </div>
           <nav class="hidden lg:flex gap-8 text-xl items-center font-semibold">
             <a href="javascript:navlink('About');">About</a>
@@ -86,22 +92,7 @@
           </button>
         </div>
       </div>
-      <section
-        name="github-contributions"
-        id="github-contributions"
-        class="lg:px-20 lg:py-16 px-4 py-10"
-      >
-        <h2 class="text-center text-3xl lg:text-5xl mb-20">
-          Github <strong>Stats</strong>
-          <br />
-          <span class="text-gray-400 text-sm"> (not that they matter) </span>
-        </h2>
-        <p class="text-slate-500 mb-1 text-center" id="contributionsCount"></p>
-        <div
-          class="card mx-auto flex justify-between gap-1 overflow-scroll pt-10 z-10"
-          id="weeks"
-        ></div>
-      </section>
+
       <section name="hero" class="lg:px-20 lg:pt-14 lg:pb-8 p-4">
         <div class="lg:flex lg:flex-row-reverse mb-10">
           <div class="relative w-full lg:w-[55%] mb-12 lg:mb-0">
@@ -189,11 +180,7 @@
             <h1 class="text-xl lg:text-hero-title leading-relaxed mb-8">
               Hello I'm <strong>Adrian Luca</strong><br />
               <strong>Fullstack</strong>
-              <span
-                ><strong
-                  class="text-white tracking-widest [text-shadow:_-2px_-2px_0_#000,_2px_-2px_0_#000,_-2px_2px_0_#000,_2px_2px_0_#000]"
-                  >Developer</strong
-                ></span
+              <span><strong class="outlined-text">Developer</strong></span
               ><br />
               Based In <strong>Moldova</strong>
             </h1>
@@ -229,7 +216,6 @@
           </a>
         </div>
       </section>
-
       <section name="skills" class="lg:px-20 lg:py-16 px-4 py-10">
         <h2 class="text-center text-3xl lg:text-5xl mb-20">
           My <strong>Skills</strong>
@@ -637,11 +623,144 @@
           </div>
         </div>
       </section>
+      <section
+        name="github-contributions"
+        id="github-contributions"
+        class="lg:px-20 lg:py-16 px-4 py-10"
+      >
+        <h2 class="text-center text-3xl lg:text-5xl mb-20">
+          Github <strong>Stats</strong>
+          <br />
+          <span class="text-gray-400 text-sm"> (not that they matter) </span>
+        </h2>
+        <p
+          class="text-slate-500 mb-1 text-cente-top-[220%] -left-[300%]r"
+          id="contributionsCount"
+        ></p>
+        <div
+          class="card mx-auto flex justify-between gap-1 overflow-scroll pt-10 z-10"
+          id="weeks"
+        ></div>
+      </section>
+      <section
+        name="contact-me"
+        class="lg:flex lg:justify-between gap-32 lg:px-20 lg:py-16 px-4 py-10"
+      >
+        <div class="lg:w-1/2 mb-6">
+          <form
+            action="mailto:adrianluca14@gmail.com"
+            method="post"
+            enctype="text/plain"
+            id="contactForm"
+          >
+            <input
+              class="input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="yourEmail@example.com"
+              required
+            /><br /><br />
+
+            <input
+              class="input"
+              placeholder="Subject: I want to hire you for a project."
+              type="text"
+              id="subject"
+              name="subject"
+              required
+            /><br /><br />
+            <textarea
+              class="input"
+              placeholder="Describe your project. If it involves unicorns, free pizza, or time travel, i'm definitely interested!"
+              id="body"
+              name="body"
+              rows="4"
+              cols="50"
+              required
+            ></textarea
+            ><br /><br />
+            <div
+              class="lg:flex lg:flex-row-reverse lg:justify-between items-center"
+            >
+              <button class="btn-primary mb-6" type="submit">
+                Get in touch
+              </button>
+              <div class="flex gap-8">
+                <a
+                  target="”_blank”"
+                  href="https://www.linkedin.com/in/adrian-luca-768b2119a/"
+                  class="hover:bg-black border-black border-2 p-2 rounded hover:text-white"
+                >
+                  <i data-lucide="linkedin" class="w-4 h-4"></i>
+                </a>
+                <a
+                  target="”_blank”"
+                  href="https://github.com/eidriahn"
+                  class="hover:bg-black border-black border-2 p-2 rounded hover:text-white"
+                >
+                  <i data-lucide="github" class="w-4 h-4"></i>
+                </a>
+                <a
+                  target="”_blank”"
+                  href="https://twitter.com/Eidriahn"
+                  class="hover:bg-black border-black border-2 p-2 rounded hover:text-white"
+                >
+                  <i data-lucide="twitter" class="w-4 h-4"></i>
+                </a>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="lg:w-1/2">
+          <h3 class="text-2xl lg:text-5xl font-bold mb-5">
+            Let's <span class="outlined-text">talk</span> for <br />something
+            special
+          </h3>
+          <p class="text-xl text-zinc-500 mb-5">
+            I seek to push the limits of creativity to create high-engaging,
+            user-friendly, and memorable interactive experiences.
+          </p>
+          <p class="text-base lg:text-3xl font-bold">adrianluca14@gmail.com</p>
+        </div>
+      </section>
+      <footer class="bg-black text-white p-4 lg:py-6 lg:px-20">
+        <div
+          class="container mx-auto max-w-7xl flex justify-between gap-20 items-center"
+        >
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M31.53 14.212c0 4.67-2.768 8.696-6.75 10.523a7.576 7.576 0 0 0-4.667-13.415c-.056-.003-.105-.003-.16-.003-.055 0-.104 0-.16.003a2.894 2.894 0 0 0-2.734 2.89v14.471a8.685 8.685 0 0 1-8.683 8.683V14.212c0-6.393 5.184-11.577 11.577-11.577 6.392 0 11.576 5.184 11.576 11.577Z"
+              fill="currentColor"
+            />
+            <path
+              d="M22 16.258a2.894 2.894 0 1 0-4.094-4.093A2.894 2.894 0 0 0 22 16.258Z"
+              fill="currentColor"
+            />
+          </svg>
+          <div>
+            <p class="mb-2">Personal website of Adrian Luca</p>
+            <p>
+              Designed in Figma, credit to
+              <a href="https://www.figma.com/@jhanvishah" class="underline"
+                >Jhanvi Shah</a
+              >
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
     <script src="https://unpkg.com/lucide@latest"></script>
     <script type="module" src="scripts/menuButton.ts"></script>
     <script type="module" src="scripts/loadIcons.ts"></script>
     <script type="module" src="scripts/getContributions.ts"></script>
+    <script type="module" src="scripts/contactForm.ts"></script>
   </body>
   <script id="functions/helpers">
     const navlink = (path) => {
