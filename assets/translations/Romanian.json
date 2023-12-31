@@ -58,5 +58,14 @@
   },
   "buttons": {
     "get-in-touch": "Ia legătura"
+  },
+  "footer": {
+    "personal": "Site-ul personal al lui Adrian Luca",
+    "credit": "Proiectat în Figma, credit către <a href='https://www.figma.com/@jhanvishah' class='underline'>Jhanvi Shah</a>"
+  },
+  "contact-form": {
+    "email": "yourEmail@exemplu.com",
+    "subject": "Subiect: Vreau să te angajez pentru un proiect.",
+    "body": "Descrieți proiectul dvs. Dacă implică unicorni, pizza gratuită sau călătorii în timp, sunt cu siguranță interesat!"
   }
 }

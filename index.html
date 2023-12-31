@@ -920,12 +920,14 @@
                 type="email"
                 id="email"
                 name="email"
+                i18n-key="contact-form.email"
                 placeholder="yourEmail@example.com"
                 required
               /><br /><br />
 
               <input
                 class="input"
+                i18n-key="contact-form.subject"
                 placeholder="Subject: I want to hire you for a project."
                 type="text"
                 id="subject"
@@ -934,6 +936,7 @@
               /><br /><br />
               <textarea
                 class="input"
+                i18n-key="contact-form.body"
                 placeholder="Describe your project. If it involves unicorns, free pizza, or time travel, i'm definitely interested!"
                 id="body"
                 name="body"
@@ -1021,8 +1024,10 @@
             />
           </svg>
           <div>
-            <p class="mb-2">Personal website of Adrian Luca</p>
-            <p>
+            <p class="mb-2" i18n-key="footer.personal">
+              Personal website of Adrian Luca
+            </p>
+            <p i18n-key="footer.credit">
               Designed in Figma, credit to
               <a href="https://www.figma.com/@jhanvishah" class="underline"
                 >Jhanvi Shah</a

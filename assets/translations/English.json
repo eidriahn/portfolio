@@ -58,5 +58,14 @@
   },
   "buttons": {
     "get-in-touch": "Get in touch"
+  },
+  "footer": {
+    "personal": "Personal website of Adrian Luca",
+    "credit": "Designed in Figma, credit to <a href='https://www.figma.com/@jhanvishah' class='underline'>Jhanvi Shah</a>"
+  },
+  "contact-form": {
+    "email": "yourEmail@example.com",
+    "subject": "Subject: I want to hire you for a project.",
+    "body": "Describe your project. If it involves unicorns, free pizza, or time travel, i'm definitely interested!"
   }
 }

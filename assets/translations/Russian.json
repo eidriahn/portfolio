@@ -58,5 +58,14 @@
   },
   "buttons": {
     "get-in-touch": "Связаться со мной"
+  },
+  "footer": {
+    "personal": "Персональный сайт Адриана Луки",
+    "credit": "Разработано в Figma, спасибо <a href='https://www.figma.com/@jhanvishah' class='underline'>Джанви Шах</a>"
+  },
+  "contact-form": {
+    "email": "yourEmail@example.com",
+    "subject": "Тема: Я хочу нанять вас для проекта.",
+    "body": "Опишите свой проект. Если он связан с единорогами, бесплатной пиццей или путешествием во времени, я определенно заинтересован!"
   }
 }

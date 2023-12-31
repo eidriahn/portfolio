@@ -1,3 +1,6 @@
+import AttrI18n from "attr-i18n";
+import { i18n } from "./i18n";
+
 type Level = 0 | 1 | 2 | 3 | 4;
 
 interface NestedResponse {
@@ -19,6 +22,13 @@ const colors = {
   4: "bg-green-800"
 };
 
+export const contributionsTranslations = {
+  English: "contributions in the last year",
+  Italian: "contributi nell'ultimo anno",
+  Russian: "взносов за последний год",
+  Romanian: "contribuții în ultimul an"
+};
+export let totalContributions = 0;
 const weeksContainer = document.getElementById("weeks") as HTMLDivElement;
 const contributionsCount = document.getElementById(
   "contributionsCount"
@@ -36,6 +46,7 @@ const contributionsCount = document.getElementById(
   let week = 0;
   let weeksHTML = `<div id="week-${0}">`;
   let daysHTML = "";
+  totalContributions = total.lastYear;
 
   for (let i = 0; i < contributions.length; i++) {
     const { level, count, date } = contributions[i];
@@ -55,5 +66,7 @@ const contributionsCount = document.getElementById(
   }
 
   weeksContainer.innerHTML = weeksHTML;
-  contributionsCount.innerHTML = `${total.lastYear} contributions in the last year`;
+  contributionsCount.innerHTML = `${total.lastYear} ${
+    contributionsTranslations[i18n.getLanguage() ?? "English"]
+  }`;
 })();
