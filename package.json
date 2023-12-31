@@ -16,7 +16,7 @@
   },
   "type": "module",
   "dependencies": {
+    "attr-i18n": "^1.0.0",
     "lucide": "^0.302.0"
   }
 }
-

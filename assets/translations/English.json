@@ -1,0 +1,62 @@
+{
+  "navigation": {
+    "about": "About",
+    "github": "Github",
+    "experience": "Experience",
+    "contact-me": "Contact Me",
+    "language": "Language",
+    "skills": "Skills"
+  },
+  "resume": "Resume",
+  "hero": {
+    "hello": "Hello I'm <strong> Adrian Luca</strong><br /><strong>Fullstack</strong> <span><strong class='outlined-text'>Developer</strong></span><br /><span>Based In</span><strong > Moldova</strong>",
+    "description": "I'm a 23-year-old web developer fluent in English, Romanian, Russian, and Italian. <br />My focus is on practical solutions that work for you. Let's build a strong online presence together."
+  },
+  "skills": {
+    "my-skills": "My <strong>Skills</strong>"
+  },
+  "experience": {
+    "my-experience": "My <strong>Experience</strong>",
+    "backstageit": "Frontend developer at BackstageIT",
+    "backstage-timeline": "February 2022 - Present",
+    "backstage": {
+      "one": "Full cycle software development of a secure document template sharing app.",
+      "two": "Utilized GraphQL, and Apollo to develop a cohesive user experience.",
+      "three": "Utilized Playwright for e2e testing.",
+      "four": "Worked on consolidating multiple legacy websites into one unified system.",
+      "five": "Utilized code quality tools like Husky, ESLint, and SonarCloud to enhance the overall quality of the code and achieve a code coverage of 95%..."
+    },
+    "sooneat-title": "Fullstack developer at Sooneat",
+    "sooneat-timeline": "July 2021 - February 2022",
+    "sooneat": {
+      "one": "Led development of a full stack web application enabling users to consolidate orders from multiple restaurants into a single platform.",
+      "two": "Implemented frontend functionality using JavaScript, React, and Redux, ensuring seamless user experiences.",
+      "three": "Utilized Firebase for back end operations to enhance app performance and scalability.",
+      "four": "Spearheaded regular feature enhancements and bug fixes, optimizing app functionality and resolving issues.",
+      "five": "Managed deployments and ensured the app maintained high availability and stability."
+    },
+    "dynamicbox-title": "Frontend developer at DynamicBox",
+    "dynamicbox-timeline": "July 2020 - June 2021",
+    "dynamicbox": {
+      "one": "Acquired proficiency in React, TypeScript, and Redux through hands-on experience during initial job role.",
+      "two": "Collaborated in code reviews and collaborated with senior developers to refine coding practices and ensure adherence to best practices."
+    }
+  },
+  "about-me": {
+    "title": "About <strong>Me</strong>",
+    "first-paragraph": "As a 23-year-old web developer with a passion for crafting immersive digital experiences, I thrive on merging the technical and visual elements of digital products. User experience, precise design, and the art of writing clear, performant code are my cornerstones.",
+    "second-paragraph": "Embarking on my web development journey in 2020, I've embraced challenges and constantly evolved, staying at the forefront of the latest technologies. Now, with 3 years of experience, I specialize in building cutting-edge web applications using tools like React.js, Node.js, Next.js, TypeScript, Tailwindcss, and more.",
+    "third-paragraph": "When I'm not busy coding, catch me rolling around on my skateboard, soaking up the street vibes. And when I need a breakfrom the tech world, I dive into fantasy books and manga—getting lost in epic tales and cool illustrations. Check out my GitHub for code stuff!"
+  },
+  "github": {
+    "title": "Github <strong>Stats</strong>",
+    "dont-matter": "(not that they matter)"
+  },
+  "lets-talk": {
+    "title": "Let's <span class='outlined-text'>talk</span> for <br />something special",
+    "description": "I'm currently available for freelance work. If you have a project that you want to get started, think you need my help with something or just fancy saying hey, then get in touch."
+  },
+  "buttons": {
+    "get-in-touch": "Get in touch"
+  }
+}

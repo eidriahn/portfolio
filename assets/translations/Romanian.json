@@ -1,0 +1,62 @@
+{
+  "navigation": {
+    "about": "Despre",
+    "github": "Github",
+    "experience": "Experiență",
+    "contact-me": "Contactează-mă",
+    "language": "Limba",
+    "skills": "Competențe"
+  },
+  "resume": "CV",
+  "hero": {
+    "hello": "Bună, sunt <strong> Adrian Luca</strong><br /><strong>Fullstack</strong> <span><strong class='outlined-text'>Dezvoltator</strong></span><br /><span>Bazat în</span><strong > Moldova</strong>",
+    "description": "Sunt un dezvoltator web în vârstă de 23 de ani, fluent în engleză, română, rusă și italiană. <br />Mă concentrez pe soluții practice care să funcționeze pentru tine.\nHai să construim împreună o prezență online puternică."
+  },
+  "skills": {
+    "my-skills": "Abilitățile <strong>Mele</strong>"
+  },
+  "experience": {
+    "my-experience": "Experiența <strong>Mea</strong>",
+    "backstageit": "Dezvoltator frontend la BackstageIT",
+    "backstage-timeline": "Februarie 2022 - Prezent",
+    "backstage": {
+      "one": "Am dezvoltat completă a software-ului pentru o aplicație securizată de partajare a șabloanelor de documente.",
+      "two": "Am utilizat GraphQL și Apollo pentru a dezvolta o experiență de utilizator coerentă.",
+      "three": "Am utilizat Playwright pentru testarea de la un capăt la altul.",
+      "four": "Am lucrat la consolidarea mai multor site-uri web legacy într-un sistem unificat.",
+      "five": "Am utilizat unelte de calitate a codului precum Husky, ESLint și SonarCloud pentru a îmbunătăți calitatea generală a codului și a atinge o acoperire a codului de 95%..."
+    },
+    "sooneat-title": "Dezvoltator Fullstack la Sooneat",
+    "sooneat-timeline": "Iunie 2021 - Februarie 2022",
+    "sooneat": {
+      "one": "Am condus dezvoltarea unei aplicații web full stack care permite utilizatorilor să consolideze comenzi din mai multe restaurante într-o singură platformă.",
+      "two": "Am implementat funcționalitățile frontend folosind JavaScript, React și Redux, asigurând experiențe de utilizator fără probleme.",
+      "three": "Am utilizat Firebase pentru operațiuni în Backend pentru a îmbunătăți performanța și scalabilitatea aplicației.",
+      "four": "Am coordinat îmbunătățirile regulate de funcționalitate și remediat erorile, optimizând funcționalitatea aplicației și rezolvând problemele.",
+      "five": "Am gestionat implementările și m-am asigurate de disponibilitatea și stabilitatea aplicației."
+    },
+    "dynamicbox-title": "Dezvoltator Frontend la DynamicBox",
+    "dynamicbox-timeline": "Iulie 2021 - Februarie 2022",
+    "dynamicbox": {
+      "one": "Am obținut competențe în React, TypeScript și Redux prin experiența practică în timpul rolului de muncă inițial.",
+      "two": "Am colaborat în revizuirile de cod și colaborarea cu dezvoltatorii seniori pentru a rafina practicile de programare și a asigura conformitatea cu cele mai bune practici."
+    }
+  },
+  "about-me": {
+    "title": "Despre <strong>Mine</strong>",
+    "first-paragraph": "Ca dezvoltator web în vârstă de 23 de ani cu o pasiune pentru crearea experienților digitale captivante, prosper prin îmbinarea elementelor tehnice și vizuale ale produselor digitale. Experiența utilizatorului, designul precis și arta scrierii de cod clar și performant sunt pietrele de temelie ale mele.",
+    "second-paragraph": "Pornind în călătoria mea în dezvoltarea web în 2020, am acceptat provocările și am evoluat constant, rămânând în avangarda celor mai recente tehnologii. Acum, cu 3 ani de experiență, mă specializez în construirea aplicațiilor web de ultimă generație folosind instrumente precum React.js, Node.js, Next.js, TypeScript, Tailwindcss și altele.",
+    "third-paragraph": "Când nu sunt ocupat cu codul, mă găsești plimbându-mă pe skateboard. Și atunci când am nevoie de o pauză de la lumea tehnologiei, mă pierd în cărți fantastice și manga, în povești epice și ilustrații interesante. Verifică-mi GitHub pentru lucruri legate de cod!"
+  },
+  "github": {
+    "title": "Statistici <strong>GitHub</strong>",
+    "dont-matter": "(nu că ar conta)"
+  },
+  "lets-talk": {
+    "title": "Haide să <span class='outlined-text'>vorbim</span> pentru ceva <br />special",
+    "description": "Sunt disponibil în prezent pentru proiecte freelance. Dacă ai un proiect pe care vrei să-l începi, crezi că ai nevoie de ajutorul meu cu ceva sau pur și simplu vrei să spui salut, atunci ia legătura."
+  },
+  "buttons": {
+    "get-in-touch": "Ia legătura"
+  }
+}
