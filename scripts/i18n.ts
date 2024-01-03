@@ -111,7 +111,7 @@ export class AttrI18n {
     );
   }
 
-  private onChange(language: string): void {
+  onChange(language: string): void {
     if (!this.languages.includes(language)) {
       this.printMsg(`${language} is not supported.`, AttrI18nDebugLevel.ERROR);
 
@@ -284,4 +284,18 @@ export const i18n = new AttrI18n(languages, {
       contributionsTranslations[i18n.getLanguage() ?? "English"]
     }`;
   }
+});
+
+const languagesUL = document.getElementById(
+  "language-toggle"
+) as HTMLUListElement;
+
+Array.from(languagesUL.children).forEach((li) => {
+  li.addEventListener("click", () => {
+    const language = li.getAttribute("value");
+
+    if (language) {
+      i18n.onChange(language);
+    }
+  });
 });

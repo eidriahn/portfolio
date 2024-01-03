@@ -10,7 +10,7 @@ mobileMenuButton?.addEventListener("click", () => {
   const menuIconX = createElement(
     mobileMenu?.classList.contains("w-screen") ? X : Menu
   );
-  menuIconX.setAttribute("class", "w-10 h-10");
+  menuIconX.setAttribute("class", "w-10 h-10 z-30");
 
   mobileMenuButton.replaceChildren(menuIconX);
 });

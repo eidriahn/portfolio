@@ -14,7 +14,7 @@
 
       @layer components {
         .btn-primary {
-          @apply py-4 px-5 rounded bg-black text-white text-xl font-semibold flex items-center gap-4;
+          @apply py-4 px-5 rounded bg-black text-white text-xl font-semibold flex items-center gap-4 text-nowrap;
         }
 
         .card {
@@ -31,6 +31,10 @@
 
         .section-child {
           @apply max-w-7xl mx-auto;
+        }
+
+        .select {
+          @apply w-min px-3 py-2 text-base text-gray-100 bg-black border border-gray-300 rounded-md shadow-sm focus:outline-none;
         }
       }
 
@@ -52,37 +56,41 @@
     <div id="app">
       <div
         id="mobileMenu"
-        class="absolute h-screen w-0 overflow-hidden bg-black text-white flex items-center justify-center transition-all z-10"
+        class="h-screen w-0 overflow-hidden bg-black text-white flex items-center justify-center transition-all z-10 absolute"
       >
         <nav class="flex flex-col gap-8 text-xl items-center font-semibold">
-          <a href="javascript:navlink('About');" i18n-key="navigation.about"
-            >About</a
-          >
-          <a href="javascript:navlink('Skills');" i18n-key="navigation.skills"
+          <a href="javascript:navlink('skills');" i18n-key="navigation.skills"
             >Skills</a
           >
           <a
-            href="javascript:navlink('Experience');"
+            href="javascript:navlink('experience');"
             i18n-key="navigation.experience"
             >Experience</a
           >
-          <a href="javascript:navlink('Github');" i18n-key="navigation.github"
+          <a href="javascript:navlink('about-me');" i18n-key="navigation.about"
+            >About Me</a
+          >
+          <a
+            href="javascript:navlink('github-contributions');"
+            i18n-key="navigation.github"
             >Github</a
           >
           <a
-            href="javascript:navlink('Contact Me');"
+            href="javascript:navlink('contact-me');"
             i18n-key="navigation.contact-me"
             >Contact Me</a
           >
-          <select id="language-toggle">
-            <option value="English">English</option>
-            <option value="Russian">Руский</option>
-            <option value="Romanian">Română</option>
-            <option value="Italian">Italiano</option>
-          </select>
+          <a
+            href="javascript:navlink('language-toggle');"
+            i18n-key="navigation.language"
+            >Language</a
+          >
         </nav>
       </div>
-      <div class="p-4 lg:py-6 lg:px-20">
+      <div
+        id="navbar"
+        class="p-4 lg:py-6 lg:px-20 w-full bg-white z-10 transition-all duration-500"
+      >
         <div class="flex container max-w-7xl mx-auto justify-between h-14">
           <div class="flex gap-3 items-center">
             <svg
@@ -104,24 +112,33 @@
             <h5 class="text-xl font-bold">Adrian Luca</h5>
           </div>
           <nav class="hidden lg:flex gap-8 text-xl items-center font-semibold">
-            <a href="javascript:navlink('About');" i18n-key="navigation.about"
-              >About</a
-            >
-            <a href="javascript:navlink('Skills');" i18n-key="navigation.skills"
+            <a href="javascript:navlink('skills');" i18n-key="navigation.skills"
               >Skills</a
             >
             <a
-              href="javascript:navlink('Experience');"
+              href="javascript:navlink('experience');"
               i18n-key="navigation.experience"
               >Experience</a
             >
-            <a href="javascript:navlink('Github');" i18n-key="navigation.github"
+            <a
+              href="javascript:navlink('about-me');"
+              i18n-key="navigation.about"
+              >About</a
+            >
+            <a
+              href="javascript:navlink('github-contributions');"
+              i18n-key="navigation.github"
               >Github</a
             >
             <a
-              href="javascript:navlink('Contact Me');"
+              href="javascript:navlink('contact-me');"
               i18n-key="navigation.contact-me"
               >Contact Me</a
+            >
+            <a
+              href="javascript:navlink('language-toggle');"
+              i18n-key="navigation.language"
+              >Language</a
             >
           </nav>
           <a
@@ -273,7 +290,7 @@
           </div>
         </div>
       </section>
-      <section name="skills" class="lg:px-20 lg:py-16 px-4 py-10">
+      <section name="skills" id="skills" class="lg:px-20 lg:py-16 px-4 py-10">
         <div class="section-child">
           <h2
             class="text-center text-3xl lg:text-5xl mb-20"
@@ -434,6 +451,7 @@
       </section>
       <section
         name="experience"
+        id="experience"
         class="lg:px-20 lg:py-16 px-4 py-10 bg-black text-white"
       >
         <div class="section-child">
@@ -562,10 +580,10 @@
                 <a
                   href="https://sooneat.com/"
                   target="”_blank”"
-                  class="w-1/5 min-w-20"
+                  class="w-1/5 min-w-20 lg:max-h-24"
                 >
                   <svg
-                    class="w-full h-auto"
+                    class="w-full h-auto max-h-24"
                     preserveAspectRatio="xMidYMid meet"
                     viewBox="0 0 100 100"
                     class="sooneat-logo"
@@ -706,7 +724,11 @@
           </div>
         </div>
       </section>
-      <section name="about-me" class="lg:px-20 lg:py-16 px-4 py-10">
+      <section
+        name="about-me"
+        id="about-me"
+        class="lg:px-20 lg:py-16 px-4 py-10"
+      >
         <div class="section-child lg:flex lg:gap-20">
           <svg
             class="w-full lg:w-1/2 h-auto mb-10 lg:mb-0"
@@ -906,7 +928,11 @@
           ></div>
         </div>
       </section>
-      <section name="contact-me" class="lg:px-20 lg:py-16 px-4 py-10">
+      <section
+        name="contact-me"
+        id="contact-me"
+        class="lg:px-20 lg:py-16 px-4 py-10"
+      >
         <div class="section-child lg:flex lg:justify-between gap-32">
           <div class="lg:w-1/2 mb-6">
             <form
@@ -946,7 +972,7 @@
               ></textarea
               ><br /><br />
               <div
-                class="lg:flex lg:flex-row-reverse lg:justify-between items-center"
+                class="lg:flex lg:flex-row-reverse lg:justify-between items-center gap-4"
               >
                 <button
                   class="btn-primary mb-6"
@@ -1023,6 +1049,12 @@
               fill="currentColor"
             />
           </svg>
+          <ul id="language-toggle" class="flex gap-8">
+            <li class="cursor-pointer" value="English">English</li>
+            <li class="cursor-pointer" value="Romanian">Romanian</li>
+            <li class="cursor-pointer" value="Italian">Italian</li>
+            <li class="cursor-pointer" value="Russian">Russian</li>
+          </ul>
           <div>
             <p class="mb-2" i18n-key="footer.personal">
               Personal website of Adrian Luca
@@ -1046,9 +1078,17 @@
   </body>
   <script id="functions/helpers">
     const navlink = (path) => {
+      const section = document.getElementById(path);
+
+      section?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest"
+      });
+
       if (window.innerWidth <= 1024) {
         mobileMenu.classList.toggle("w-screen");
-        mobileMenu.classList.toggle("w-0");
+        mobileMenu.classList.toggle("w -0");
       }
     };
   </script>
