@@ -56,35 +56,43 @@
     <div id="app">
       <div
         id="mobileMenu"
-        class="h-screen w-0 overflow-hidden bg-black text-white flex items-center justify-center transition-all z-10 absolute"
+        class="h-screen w-0 overflow-hidden bg-black text-white flex items-center justify-center transition-all duration-100 z-10 absolute"
       >
         <nav class="flex flex-col gap-8 text-xl items-center font-semibold">
-          <a href="javascript:navlink('skills');" i18n-key="navigation.skills"
-            >Skills</a
-          >
-          <a
-            href="javascript:navlink('experience');"
+          <button name="link" value="skills" i18n-key="navigation.skills">
+            Skills
+          </button>
+          <button
+            name="link"
+            value="experience"
             i18n-key="navigation.experience"
-            >Experience</a
           >
-          <a href="javascript:navlink('about-me');" i18n-key="navigation.about"
-            >About Me</a
-          >
-          <a
-            href="javascript:navlink('github-contributions');"
+            Experience
+          </button>
+          <button name="link" value="about-me" i18n-key="navigation.about">
+            About Me
+          </button>
+          <button
+            name="link"
+            value="github-contributions"
             i18n-key="navigation.github"
-            >Github</a
           >
-          <a
-            href="javascript:navlink('contact-me');"
+            Github
+          </button>
+          <button
+            name="link"
+            value="contact-me"
             i18n-key="navigation.contact-me"
-            >Contact Me</a
           >
-          <a
-            href="javascript:navlink('language-toggle');"
+            Contact Me
+          </button>
+          <button
+            name="link"
+            value="language-toggle"
             i18n-key="navigation.language"
-            >Language</a
           >
+            Language
+          </button>
         </nav>
       </div>
       <div
@@ -112,34 +120,40 @@
             <h5 class="text-xl font-bold">Adrian Luca</h5>
           </div>
           <nav class="hidden lg:flex gap-8 text-xl items-center font-semibold">
-            <a href="javascript:navlink('skills');" i18n-key="navigation.skills"
-              >Skills</a
-            >
-            <a
-              href="javascript:navlink('experience');"
+            <button name="link" value="skills" i18n-key="navigation.skills">
+              Skills
+            </button>
+            <button
+              name="link"
+              value="experience"
               i18n-key="navigation.experience"
-              >Experience</a
             >
-            <a
-              href="javascript:navlink('about-me');"
-              i18n-key="navigation.about"
-              >About</a
-            >
-            <a
-              href="javascript:navlink('github-contributions');"
+              Experience
+            </button>
+            <button name="link" value="about-me" i18n-key="navigation.about">
+              About Me
+            </button>
+            <button
+              name="link"
+              value="github-contributions"
               i18n-key="navigation.github"
-              >Github</a
             >
-            <a
-              href="javascript:navlink('contact-me');"
+              Github
+            </button>
+            <button
+              name="link"
+              value="contact-me"
               i18n-key="navigation.contact-me"
-              >Contact Me</a
             >
-            <a
-              href="javascript:navlink('language-toggle');"
+              Contact Me
+            </button>
+            <button
+              name="link"
+              value="language-toggle"
               i18n-key="navigation.language"
-              >Language</a
             >
+              Language
+            </button>
           </nav>
           <a
             href="https://docs.google.com/document/d/e/2PACX-1vS7gr40atpcHgTxcRmb1fkKg6PSohGklW6LBO15ffuD6JMHDAErbRyobZ4bzBKObg/pub"
@@ -1075,22 +1089,7 @@
     <script type="module" src="scripts/getContributions.ts"></script>
     <script type="module" src="scripts/contactForm.ts"></script>
     <script type="module" src="scripts/i18n.ts"></script>
+    <script type="module" src="scripts/navlink.ts"></script>
   </body>
-  <script id="functions/helpers">
-    const navlink = (path) => {
-      const section = document.getElementById(path);
-
-      section?.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-        inline: "nearest"
-      });
-
-      if (window.innerWidth <= 1024) {
-        mobileMenu.classList.toggle("w-screen");
-        mobileMenu.classList.toggle("w -0");
-      }
-    };
-  </script>
 </html>
 
