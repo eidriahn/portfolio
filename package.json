@@ -11,8 +11,9 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "build": "tsc && vite build && bun run copy-translations",
+    "preview": "vite preview",
+    "copy-translations": "cp -r assets/translations/ dist/assets/translations/"
   },
   "type": "module",
   "dependencies": {

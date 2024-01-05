@@ -4,6 +4,6 @@ export default {
     host: true
   },
   build: {
-    assetsInclude: "assets/translations/*.json"
+    assetsInclude: ["assets/translations/*.json"]
   }
 };
