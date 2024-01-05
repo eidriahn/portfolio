@@ -67,5 +67,11 @@
     "email": "yourEmail@example.com",
     "subject": "Subject: I want to hire you for a project.",
     "body": "Describe your project. If it involves unicorns, free pizza, or time travel, i'm definitely interested!"
+  },
+  "languages": {
+    "english": "English",
+    "romanian": "Romanian",
+    "russian": "Russian",
+    "italian": "Italian"
   }
 }

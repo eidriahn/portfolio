@@ -55,71 +55,75 @@
 
     <div id="app">
       <div
-        id="mobileMenu"
-        class="h-screen w-0 overflow-hidden bg-black text-white flex items-center justify-center transition-all duration-100 z-10 absolute"
-      >
-        <nav class="flex flex-col gap-8 text-xl items-center font-semibold">
-          <button name="link" value="skills" i18n-key="navigation.skills">
-            Skills
-          </button>
-          <button
-            name="link"
-            value="experience"
-            i18n-key="navigation.experience"
-          >
-            Experience
-          </button>
-          <button name="link" value="about-me" i18n-key="navigation.about">
-            About Me
-          </button>
-          <button
-            name="link"
-            value="github-contributions"
-            i18n-key="navigation.github"
-          >
-            Github
-          </button>
-          <button
-            name="link"
-            value="contact-me"
-            i18n-key="navigation.contact-me"
-          >
-            Contact Me
-          </button>
-          <button
-            name="link"
-            value="language-toggle"
-            i18n-key="navigation.language"
-          >
-            Language
-          </button>
-        </nav>
-      </div>
-      <div
         id="navbar"
-        class="p-4 lg:py-6 lg:px-20 w-full bg-white z-10 transition-all duration-500"
+        class="p-4 lg:py-6 lg:px-20 w-full bg-white z-10 transition-all duration-500 fixed"
       >
         <div class="flex container max-w-7xl mx-auto justify-between h-14">
           <div class="flex gap-3 items-center">
             <svg
-              width="40"
-              height="40"
-              viewBox="0 0 40 40"
+              width="25"
+              height="26"
+              viewBox="0 0 25 26"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                d="M31.53 14.212c0 4.67-2.768 8.696-6.75 10.523a7.576 7.576 0 0 0-4.667-13.415c-.056-.003-.105-.003-.16-.003-.055 0-.104 0-.16.003a2.894 2.894 0 0 0-2.734 2.89v14.471a8.685 8.685 0 0 1-8.683 8.683V14.212c0-6.393 5.184-11.577 11.577-11.577 6.392 0 11.576 5.184 11.576 11.577Z"
-                fill="currentColor"
-              />
-              <path
-                d="M22 16.258a2.894 2.894 0 1 0-4.094-4.093A2.894 2.894 0 0 0 22 16.258Z"
-                fill="currentColor"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M24.587 24.913a4.936 4.936 0 0 1-6.401-2.784L15.377 15H8.753l-5.306 9.812A6.192 6.192 0 0 1 .946 16.42L8.612 2.242c.296-.548.74-.967 1.254-1.233L9.852.972c2.536-1 5.403.247 6.402 2.783l8.333 21.158ZM10.376 12h3.82l-1.61-4.088L10.376 12Z"
+                fill="#000"
               />
             </svg>
+
             <h5 class="text-xl font-bold">Adrian Luca</h5>
           </div>
           <nav class="hidden lg:flex gap-8 text-xl items-center font-semibold">
+            <button name="link" value="skills" i18n-key="navigation.skills">
+              Skills
+            </button>
+            <button
+              name="link"
+              value="experience"
+              i18n-key="navigation.experience"
+            >
+              Experience
+            </button>
+            <button name="link" value="about-me" i18n-key="navigation.about">
+              About Me
+            </button>
+            <button
+              name="link"
+              value="github-contributions"
+              i18n-key="navigation.github"
+            >
+              Github
+            </button>
+            <button
+              name="link"
+              value="language-toggle"
+              i18n-key="navigation.language"
+            >
+              Language
+            </button>
+          </nav>
+          <a
+            href="resume.pdf"
+            class="hidden lg:block btn-primary"
+            target="_blank"
+            i18n-key="resume"
+            >Resume</a
+          >
+          <button type="button" class="lg:hidden z-30" id="mobileMenuButton">
+            <i data-lucide="menu" class="w-10 h-10"></i>
+          </button>
+        </div>
+        <div
+          id="mobileMenu"
+          class="rounded-lg border-2 border-white lg:hidden overflow-hidden max-h-0 top-20 absolute mx-auto -translate-x-1/2 left-1/2 w-11/12 bg-black text-white flex items-center justify-center transition-all duration-500 z-20"
+        >
+          <nav
+            class="flex flex-col gap-8 text-xl items-center font-semibold my-10"
+          >
             <button name="link" value="skills" i18n-key="navigation.skills">
               Skills
             </button>
@@ -147,6 +151,7 @@
             >
               Contact Me
             </button>
+            <a href="resume.pdf" target="_blank" i18n-key="resume">Resume</a>
             <button
               name="link"
               value="language-toggle"
@@ -155,16 +160,6 @@
               Language
             </button>
           </nav>
-          <a
-            href="https://docs.google.com/document/d/e/2PACX-1vS7gr40atpcHgTxcRmb1fkKg6PSohGklW6LBO15ffuD6JMHDAErbRyobZ4bzBKObg/pub"
-            class="hidden lg:block btn-primary"
-            target="_blank"
-            i18n-key="resume"
-            >Resume</a
-          >
-          <button type="button" class="lg:hidden z-10" id="mobileMenuButton">
-            <i data-lucide="menu" class="w-10 h-10"></i>
-          </button>
         </div>
       </div>
 
@@ -1045,29 +1040,52 @@
       </section>
       <footer class="bg-black text-white p-4 lg:py-6 lg:px-20">
         <div
-          class="container mx-auto max-w-7xl flex justify-between gap-20 items-center"
+          class="container mx-auto max-w-7xl flex flex-col lg:flex-row justify-between gap-10 lg:gap-20 lg:items-center"
         >
           <svg
-            width="40"
-            height="40"
-            viewBox="0 0 40 40"
+            class="min-w-8"
+            width="25"
+            height="26"
+            viewBox="0 0 25 26"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              d="M31.53 14.212c0 4.67-2.768 8.696-6.75 10.523a7.576 7.576 0 0 0-4.667-13.415c-.056-.003-.105-.003-.16-.003-.055 0-.104 0-.16.003a2.894 2.894 0 0 0-2.734 2.89v14.471a8.685 8.685 0 0 1-8.683 8.683V14.212c0-6.393 5.184-11.577 11.577-11.577 6.392 0 11.576 5.184 11.576 11.577Z"
-              fill="currentColor"
-            />
-            <path
-              d="M22 16.258a2.894 2.894 0 1 0-4.094-4.093A2.894 2.894 0 0 0 22 16.258Z"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M24.587 24.913a4.936 4.936 0 0 1-6.401-2.784L15.377 15H8.753l-5.306 9.812A6.192 6.192 0 0 1 .946 16.42L8.612 2.242c.296-.548.74-.967 1.254-1.233L9.852.972c2.536-1 5.403.247 6.402 2.783l8.333 21.158ZM10.376 12h3.82l-1.61-4.088L10.376 12Z"
               fill="currentColor"
             />
           </svg>
           <ul id="language-toggle" class="flex gap-8">
-            <li class="cursor-pointer" value="English">English</li>
-            <li class="cursor-pointer" value="Romanian">Romanian</li>
-            <li class="cursor-pointer" value="Italian">Italian</li>
-            <li class="cursor-pointer" value="Russian">Russian</li>
+            <li
+              class="cursor-pointer"
+              value="English"
+              i18n-key="languages.english"
+            >
+              English
+            </li>
+            <li
+              class="cursor-pointer"
+              value="Romanian"
+              i18n-key="languages.romanian"
+            >
+              Romanian
+            </li>
+            <li
+              class="cursor-pointer"
+              value="Italian"
+              i18n-key="languages.italian"
+            >
+              Italian
+            </li>
+            <li
+              class="cursor-pointer"
+              value="Russian"
+              i18n-key="languages.russian"
+            >
+              Russian
+            </li>
           </ul>
           <div>
             <p class="mb-2" i18n-key="footer.personal">
@@ -1090,6 +1108,7 @@
     <script type="module" src="scripts/contactForm.ts"></script>
     <script type="module" src="scripts/i18n.ts"></script>
     <script type="module" src="scripts/navlink.ts"></script>
+    <script type="module" src="scripts/navbar.ts"></script>
   </body>
 </html>
 

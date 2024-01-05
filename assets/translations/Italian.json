@@ -67,5 +67,11 @@
     "email": "yourEmail@esempio.com",
     "subject": "Oggetto: Voglio assumerti per un progetto.",
     "body": "Descrivi il tuo progetto. Se coinvolge unicorni, pizza gratis o viaggi nel tempo, sono sicuramente interessato!"
+  },
+  "languages": {
+    "english": "Inglese",
+    "italian": "Italiano",
+    "romanian": "Rumeno",
+    "russian": "Russo"
   }
 }

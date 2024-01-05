@@ -67,5 +67,11 @@
     "email": "yourEmail@exemplu.com",
     "subject": "Subiect: Vreau să te angajez pentru un proiect.",
     "body": "Descrieți proiectul dvs. Dacă implică unicorni, pizza gratuită sau călătorii în timp, sunt cu siguranță interesat!"
+  },
+  "languages": {
+    "english": "Engleză",
+    "romanian": "Română",
+    "russian": "Rusă",
+    "italian": "Italiană"
   }
 }
