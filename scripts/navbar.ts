@@ -11,7 +11,7 @@ if (navbar) {
       navbar.style.top = "0";
     } else {
       handleMobileMenuClose();
-      navbar.style.top = "-100px"; // Adjust this value to match the height of your navbar
+      navbar.style.top = "-110px";
     }
     previousScrollPosition = currentScrollPosition;
   };
