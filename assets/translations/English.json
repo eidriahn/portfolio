@@ -17,7 +17,7 @@
   },
   "experience": {
     "my-experience": "My <strong>Experience</strong>",
-    "backstageit": "Frontend developer at<a target='_blank' class='underline' aria-label='Backstage It' href='https://backstage-it.nl/'>BackstageIT</a>",
+    "backstageit": "Frontend developer at<a target='_blank' class='underline' aria-label='BackstageIT' href='https://backstage-it.nl/'>BackstageIT</a>",
     "backstage-timeline": "February 2022 - Present",
     "backstage": {
       "one": "Full cycle software development of a secure document template sharing app.",

@@ -15,11 +15,11 @@ interface NestedResponse {
 }
 
 const colors = {
-  0: "bg-green-50",
-  1: "bg-green-200",
-  2: "bg-green-400",
-  3: "bg-green-600",
-  4: "bg-green-800"
+  0: "#f0fdf4",
+  1: "#bbf7d0",
+  2: "#4ade80",
+  3: "#16a34a",
+  4: "#14532d"
 };
 
 export const contributionsTranslations = {
@@ -29,44 +29,34 @@ export const contributionsTranslations = {
   Romanian: "contribuții în ultimul an"
 };
 export let totalContributions = 0;
-const weeksContainer = document.getElementById("weeks") as HTMLDivElement;
-const contributionsCount = document.getElementById(
-  "contributionsCount"
-) as HTMLSpanElement;
+const canvas = document.getElementById("weeks") as HTMLCanvasElement;
+const ctx = canvas.getContext("2d");
+canvas.width = 1250;
 
 (async () => {
+  if (!ctx) {
+    return;
+  }
+
   const res = fetch(
     "https://github-contributions-api.jogruber.de/v4/eidriahn?y=last"
   );
 
   const text = await (await res).text();
-  const { contributions, total }: NestedResponse = JSON.parse(text);
+  const { contributions }: NestedResponse = JSON.parse(text);
 
-  let days = 0;
-  let week = 0;
-  let weeksHTML = `<div id="week-${0}">`;
-  let daysHTML = "";
-  totalContributions = total.lastYear;
+  let y = 0;
+  let x = 0;
 
   for (let i = 0; i < contributions.length; i++) {
-    const { level, count, date } = contributions[i];
-    daysHTML += `<div class="w-4 h-4 rounded mb-2 ${colors[level]} group relative"><span class="group-hover:block text-nowrap hidden absolute -translate-x-1/2 -translate-y-3/4 text-gray-900 px-3 py-1 bg-slate-200 z-10   rounded">${count} contributions on ${date}</span></div>`;
-    days += 1;
+    const { level } = contributions[i];
+    y += 20;
+    ctx.fillStyle = colors[level];
+    ctx.fillRect(x, y, 15, 15);
 
-    if (days === 7) {
-      week += 1;
-      days = 0;
-      weeksHTML += daysHTML + `</div><div id="week-${week}">`;
-      daysHTML = "";
+    if (i % 6 === 0 && i !== 1) {
+      x += 20;
+      y = 0;
     }
   }
-
-  if (days > 0) {
-    weeksHTML += daysHTML + `</div>`;
-  }
-
-  weeksContainer.innerHTML = weeksHTML;
-  contributionsCount.innerHTML = `${total.lastYear} ${
-    contributionsTranslations[i18n.getLanguage() ?? "English"]
-  }`;
 })();
