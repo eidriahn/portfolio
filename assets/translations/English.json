@@ -9,15 +9,15 @@
   },
   "resume": "Resume",
   "hero": {
-    "hello": "Hello I'm <strong> Adrian Luca</strong><br /><strong>Fullstack</strong> <span><strong class='outlined-text'>Developer</strong></span><br /><span>Based In</span><strong > Moldova</strong>",
-    "description": "I'm a 23-year-old web developer fluent in English, Romanian, Russian, and Italian. <br />My focus is on practical solutions that work for you. Let's build a strong online presence together."
+    "hello": "Hello I'm <strong> Adrian Luca</strong><br /><strong>Fullstack</strong> <span><strong class='outlined-text'>Developer</strong></span>",
+    "description": "I'm a 23-year-old web developer fluent in English, Romanian, Russian, and Italian. <br />My focus is on practical solutions that work for you.<br />Let's build a strong online presence together."
   },
   "skills": {
     "my-skills": "My <strong>Skills</strong>"
   },
   "experience": {
     "my-experience": "My <strong>Experience</strong>",
-    "backstageit": "Frontend developer at BackstageIT",
+    "backstageit": "Frontend developer at<a target='_blank' class='underline' aria-label='Backstage It' href='https://backstage-it.nl/'>BackstageIT</a>",
     "backstage-timeline": "February 2022 - Present",
     "backstage": {
       "one": "Full cycle software development of a secure document template sharing app.",
@@ -26,7 +26,7 @@
       "four": "Worked on consolidating multiple legacy websites into one unified system.",
       "five": "Utilized code quality tools like Husky, ESLint, and SonarCloud to enhance the overall quality of the code and achieve a code coverage of 95%..."
     },
-    "sooneat-title": "Fullstack developer at Sooneat",
+    "sooneat-title": "Fullstack developer at<a aria-label='Sooneat' target='_blank' class='underline' href='https://sooneat.com/'>Sooneat</a>",
     "sooneat-timeline": "July 2021 - February 2022",
     "sooneat": {
       "one": "Led development of a full stack web application enabling users to consolidate orders from multiple restaurants into a single platform.",
@@ -35,7 +35,7 @@
       "four": "Spearheaded regular feature enhancements and bug fixes, optimizing app functionality and resolving issues.",
       "five": "Managed deployments and ensured the app maintained high availability and stability."
     },
-    "dynamicbox-title": "Frontend developer at DynamicBox",
+    "dynamicbox-title": "Frontend developer at<a aria-label='DynamicBox' class='underline' href='https://dynamicbox.it/' target='_blank' class='w-1/5 min-w-20' >DynamicBox</a >",
     "dynamicbox-timeline": "July 2020 - June 2021",
     "dynamicbox": {
       "one": "Acquired proficiency in React, TypeScript, and Redux through hands-on experience during initial job role.",

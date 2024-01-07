@@ -9,15 +9,15 @@
   },
   "resume": "Curriculum",
   "hero": {
-    "hello": "Ciao, sono <strong> Adrian Luca</strong><br /><strong>Svillupatore</strong> <span><strong class='outlined-text'>Fullstack</strong></span><br /><span>Basato in</span><strong > Moldova</strong>",
-    "description": "Sono uno sviluppatore web di 23 anni fluente in inglese, rumeno, russo e italiano. <br />Il mio focus è su soluzioni pratiche che funzionano per te. \nCostruiamoti una forte presenza online, insieme."
+    "hello": "Ciao, sono <strong> Adrian Luca</strong><br /><strong>Svillupatore</strong> <span><strong class='outlined-text'>Fullstack</strong></span>",
+    "description": "Sono uno sviluppatore web fluente in inglese, rumeno, russo e italiano. <br />Il mio focus è su soluzioni pratiche che funzionano per te. \nCostruiamoti una forte presenza online, insieme."
   },
   "skills": {
     "my-skills": "Le mie <strong>Competenze</strong>"
   },
   "experience": {
     "my-experience": "Le mie <strong>Esperienze</strong>",
-    "backstageit": "Sviluppatore frontend presso BackstageIT",
+    "backstageit": "Sviluppatore frontend presso <a class='underline' target='_blank' aria-label='BackstageIT' href='https://backstage-it.nl/ '>BackstageIT</a>",
     "backstage-timeline": "Febbraio 2022 - Presente",
     "backstage": {
       "one": "Sviluppo software completo di un'app di condivisione di modelli di documenti in un modo sicuro.",
@@ -26,7 +26,7 @@
       "four": "Lavorato alla consolidazione di più siti web legacy in un unico sistema.",
       "five": "Utilizzato strumenti di qualità del codice come Husky, ESLint e SonarCloud per migliorare la qualità generale del codice e raggiungere una copertura del codice del 95%..."
     },
-    "sooneat-title": "Sviluppatore fullstack presso Sooneat",
+    "sooneat-title": "Sviluppatore fullstack presso <a aria-label='Sooneat' target='_blank' class='underline' href='https://sooneat.com/'>Sooneat</a>",
     "sooneat-timeline": "Luglio 2021 - Febbraio 2022",
     "sooneat": {
       "one": "Guidato lo sviluppo di un'applicazione web full stack che consente agli utenti di consolidare gli ordini da più ristoranti in una singola piattaforma.",
@@ -35,7 +35,7 @@
       "four": "Guidato miglioramenti regolari delle funzionalità e correzioni di bug, ottimizzando la funzionalità dell'app e risolvendo problemi.",
       "five": "Gestito le implementazioni e assicurato che l'app mantenesse un'alta disponibilità e stabilità."
     },
-    "dynamicbox-title": "Sviluppatore frontend presso DynamicBox",
+    "dynamicbox-title": "Sviluppatore frontend presso <a aria-label='DynamicBox' class='underline' href='https://dynamicbox.it/' target='_blank' class='w-1/5 min-w-20' >DynamicBox</a >",
     "dynamicbox-timeline": "Luglio 2020 - Giugno 2021",
     "dynamicbox": {
       "one": "Acquisita competenza in React, TypeScript e Redux attraverso l'esperienza pratica durante il ruolo di lavoro iniziale.",

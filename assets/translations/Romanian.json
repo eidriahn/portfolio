@@ -9,15 +9,15 @@
   },
   "resume": "CV",
   "hero": {
-    "hello": "Bună, sunt <strong> Adrian Luca</strong><br /><strong>Fullstack</strong> <span><strong class='outlined-text'>Dezvoltator</strong></span><br /><span>Bazat în</span><strong > Moldova</strong>",
-    "description": "Sunt un dezvoltator web în vârstă de 23 de ani, fluent în engleză, română, rusă și italiană. <br />Mă concentrez pe soluții practice care să funcționeze pentru tine.\nHai să construim împreună o prezență online puternică."
+    "hello": "Bună, sunt <strong> Adrian Luca</strong><br /><strong>Fullstack</strong> <span><strong class='outlined-text'>Dezvoltator</strong></span>",
+    "description": "Sunt un dezvoltator web, fluent în engleză, română, rusă și italiană. <br />Mă concentrez pe soluții practice care să funcționeze pentru tine.\nHai să construim împreună o prezență online puternică."
   },
   "skills": {
     "my-skills": "Abilitățile <strong>Mele</strong>"
   },
   "experience": {
     "my-experience": "Experiența <strong>Mea</strong>",
-    "backstageit": "Dezvoltator frontend la BackstageIT",
+    "backstageit": "Dezvoltator frontend la <a class='underline' target='_blank' aria-label='BackstageIT' href='https://backstage-it.nl/ '>BackstageIT</a>",
     "backstage-timeline": "Februarie 2022 - Prezent",
     "backstage": {
       "one": "Am dezvoltat completă a software-ului pentru o aplicație securizată de partajare a șabloanelor de documente.",
@@ -26,7 +26,7 @@
       "four": "Am lucrat la consolidarea mai multor site-uri web legacy într-un sistem unificat.",
       "five": "Am utilizat unelte de calitate a codului precum Husky, ESLint și SonarCloud pentru a îmbunătăți calitatea generală a codului și a atinge o acoperire a codului de 95%..."
     },
-    "sooneat-title": "Dezvoltator Fullstack la Sooneat",
+    "sooneat-title": "Dezvoltator Fullstack la <a aria-label='Sooneat' target='_blank' class='underline' href='https://sooneat.com/'>Sooneat</a>",
     "sooneat-timeline": "Iunie 2021 - Februarie 2022",
     "sooneat": {
       "one": "Am condus dezvoltarea unei aplicații web full stack care permite utilizatorilor să consolideze comenzi din mai multe restaurante într-o singură platformă.",
@@ -35,7 +35,7 @@
       "four": "Am coordinat îmbunătățirile regulate de funcționalitate și remediat erorile, optimizând funcționalitatea aplicației și rezolvând problemele.",
       "five": "Am gestionat implementările și m-am asigurate de disponibilitatea și stabilitatea aplicației."
     },
-    "dynamicbox-title": "Dezvoltator Frontend la DynamicBox",
+    "dynamicbox-title": "Dezvoltator Frontend la <a aria-label='DynamicBox' class='underline' href='https://dynamicbox.it/' target='_blank' class='w-1/5 min-w-20' >DynamicBox</a >",
     "dynamicbox-timeline": "Iulie 2021 - Februarie 2022",
     "dynamicbox": {
       "one": "Am obținut competențe în React, TypeScript și Redux prin experiența practică în timpul rolului de muncă inițial.",

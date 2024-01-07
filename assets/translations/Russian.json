@@ -9,15 +9,15 @@
   },
   "resume": "Резюме",
   "hero": {
-    "hello": "Привет, я <strong> Адриан Лука</strong><br /><strong>Fullstack</strong> <span><strong class='outlined-text'>Разработчик</strong></span><br /><span>С</span><strong > Молдовы</strong>",
-    "description": "Я 23-летний веб-разработчик, владеющий английским, румынским, русским и итальянским языками. <br />Моя цель - практические решения, которые работают для вас. Давайте вместе построим сильное онлайн-присутствие."
+    "hello": "Привет, я <strong> Адриан Лука</strong><br /><strong>Fullstack</strong> <span><strong class='outlined-text'>Разработчик</strong></span>",
+    "description": "Я веб-разработчик, владеющий английским, румынским, русским и итальянским языками. <br />Моя цель - практические решения, которые работают для вас. Давайте вместе построим сильное онлайн-присутствие."
   },
   "skills": {
     "my-skills": "Мои <strong>Навыки</strong>"
   },
   "experience": {
     "my-experience": "Мой <strong>Опыт</strong>",
-    "backstageit": "Фронтенд-разработчик в BackstageIT",
+    "backstageit": "Фронтенд-разработчик в <a class='underline' target='_blank' aria-label='BackstageIT' href='https://backstage-it.nl/ '>BackstageIT</a>",
     "backstage-timeline": "Февраль 2022 - Настоящее время",
     "backstage": {
       "one": "Полное программное обеспечение для приложения по обмену безопасными шаблонами документов.",
@@ -26,7 +26,7 @@
       "four": "Работа над объединением нескольких устаревших веб-сайтов в одну систему.",
       "five": "Использование инструментов контроля качества кода, таких как Husky, ESLint и SonarCloud, для улучшения общего качества кода и достижения покрытия кода 95%..."
     },
-    "sooneat-title": "Fullstack-разработчик в Sooneat",
+    "sooneat-title": "Fullstack-разработчик в <a aria-label='Sooneat' target='_blank' class='underline' href='https://sooneat.com/'>Sooneat</a>",
     "sooneat-timeline": "Июль 2021 - Февраль 2022",
     "sooneat": {
       "one": "Руководство разработкой полнофункционального веб-приложения, позволяющего пользователям объединять заказы из нескольких ресторанов на одной платформе.",
@@ -35,7 +35,7 @@
       "four": "Руководство регулярными улучшениями функциональности и исправлением ошибок, оптимизируя функциональность приложения и решая проблемы.",
       "five": "Управление реализациями и обеспечение высокой доступности и стабильности приложения."
     },
-    "dynamicbox-title": "Фронтенд-разработчик в DynamicBox",
+    "dynamicbox-title": "Фронтенд-разработчик в <a aria-label='DynamicBox' class='underline' href='https://dynamicbox.it/' target='_blank' class='w-1/5 min-w-20' >DynamicBox</a >",
     "dynamicbox-timeline": "Июль 2020 - Июнь 2021",
     "dynamicbox": {
       "one": "Получение опыта работы с React, TypeScript и Redux через практический опыт в начальной рабочей роли.",

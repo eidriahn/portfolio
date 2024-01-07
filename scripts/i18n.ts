@@ -59,12 +59,6 @@ export class AttrI18n {
     });
 
     this.init();
-
-    const app = document.getElementById("app");
-    const loader = document.getElementById("loader");
-
-    app?.classList.toggle("hidden");
-    loader?.classList.toggle("hidden");
   }
 
   public async init(): Promise<void> {
