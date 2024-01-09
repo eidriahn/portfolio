@@ -17,7 +17,7 @@
   },
   "experience": {
     "my-experience": "My <strong>Experience</strong>",
-    "backstageit": "Frontend developer at<a target='_blank' class='underline' aria-label='BackstageIT' href='https://backstage-it.nl/'>BackstageIT</a>",
+    "backstageit": "Frontend developer at <a target='_blank' class='underline' aria-label='BackstageIT' href='https://backstage-it.nl/'>BackstageIT</a>",
     "backstage-timeline": "February 2022 - Present",
     "backstage": {
       "one": "Full cycle software development of a secure document template sharing app.",
@@ -26,7 +26,7 @@
       "four": "Worked on consolidating multiple legacy websites into one unified system.",
       "five": "Utilized code quality tools like Husky, ESLint, and SonarCloud to enhance the overall quality of the code and achieve a code coverage of 95%..."
     },
-    "sooneat-title": "Fullstack developer at<a aria-label='Sooneat' target='_blank' class='underline' href='https://sooneat.com/'>Sooneat</a>",
+    "sooneat-title": "Fullstack developer at <a aria-label='Sooneat' target='_blank' class='underline' href='https://sooneat.com/'>Sooneat</a>",
     "sooneat-timeline": "July 2021 - February 2022",
     "sooneat": {
       "one": "Led development of a full stack web application enabling users to consolidate orders from multiple restaurants into a single platform.",
@@ -35,7 +35,7 @@
       "four": "Spearheaded regular feature enhancements and bug fixes, optimizing app functionality and resolving issues.",
       "five": "Managed deployments and ensured the app maintained high availability and stability."
     },
-    "dynamicbox-title": "Frontend developer at<a aria-label='DynamicBox' class='underline' href='https://dynamicbox.it/' target='_blank' class='w-1/5 min-w-20' >DynamicBox</a >",
+    "dynamicbox-title": "Frontend developer at <a aria-label='DynamicBox' class='underline' href='https://dynamicbox.it/' target='_blank' class='w-1/5 min-w-20' >DynamicBox</a >",
     "dynamicbox-timeline": "July 2020 - June 2021",
     "dynamicbox": {
       "one": "Acquired proficiency in React, TypeScript, and Redux through hands-on experience during initial job role.",

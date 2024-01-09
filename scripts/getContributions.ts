@@ -48,13 +48,14 @@ canvas.width = 1250;
   let y = 0;
   let x = 0;
 
-  for (let i = 0; i < contributions.length; i++) {
+  for (let i = 1; i < contributions.length + 1; i++) {
     const { level } = contributions[i];
-    y += 20;
     ctx.fillStyle = colors[level];
     ctx.fillRect(x, y, 15, 15);
 
-    if (i % 6 === 0 && i !== 1) {
+    y += 20;
+
+    if (i % 7 === 0) {
       x += 20;
       y = 0;
     }
