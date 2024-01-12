@@ -1,5 +1,6 @@
 import AttrI18n from "attr-i18n";
 import { i18n } from "./i18n";
+import { LogIn } from "lucide";
 
 type Level = 0 | 1 | 2 | 3 | 4;
 
@@ -31,7 +32,6 @@ export const contributionsTranslations = {
 export let totalContributions = 0;
 const canvas = document.getElementById("weeks") as HTMLCanvasElement;
 const ctx = canvas.getContext("2d");
-canvas.width = 1250;
 
 (async () => {
   if (!ctx) {
@@ -44,6 +44,7 @@ canvas.width = 1250;
 
   const text = await (await res).text();
   const { contributions }: NestedResponse = JSON.parse(text);
+  canvas.width = 20 * Math.floor(contributions.length / 7) + 20;
 
   let y = 0;
   let x = 0;
