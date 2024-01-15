@@ -1,4 +1,4 @@
-import { Menu, X, createElement, createIcons } from "lucide";
+import { Menu, X, createElement } from "lucide";
 
 export const mobileMenuButton = document.getElementById("mobileMenuButton");
 const mobileMenu = document.getElementById("mobileMenu");
@@ -25,5 +25,3 @@ export const handleMobileMenuClose = () => {
 
   mobileMenuButton?.replaceChildren(menuIcon);
 };
-
-createIcons({ icons: { Menu } });

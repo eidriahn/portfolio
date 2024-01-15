@@ -50,7 +50,7 @@ const ctx = canvas.getContext("2d");
   let x = 0;
 
   for (let i = 1; i < contributions.length + 1; i++) {
-    const { level } = contributions[i];
+    const { level } = contributions[i - 1];
     ctx.fillStyle = colors[level];
     ctx.fillRect(x, y, 15, 15);
 
