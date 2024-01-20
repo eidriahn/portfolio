@@ -1,7 +1,3 @@
-import AttrI18n from "attr-i18n";
-import { i18n } from "./i18n";
-import { LogIn } from "lucide";
-
 type Level = 0 | 1 | 2 | 3 | 4;
 
 interface NestedResponse {

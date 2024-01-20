@@ -17,7 +17,7 @@
   },
   "type": "module",
   "dependencies": {
+    "bun": "^1.0.24",
     "lucide": "^0.302.0"
   }
 }
-
