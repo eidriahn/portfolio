@@ -25,3 +25,16 @@ function updateFormAction() {
     subjectValue
   )}&body=${encodeURIComponent(bodyValue)}`;
 }
+
+contactForm.addEventListener("submit", (ev) => {
+  ev.preventDefault();
+
+  const subject = encodeURIComponent(subjectValue);
+  const body = encodeURIComponent(bodyValue);
+
+  window.open(
+    `mailto:adrian@adrianluca.dev?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`
+  );
+});
