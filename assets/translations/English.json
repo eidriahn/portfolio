@@ -10,7 +10,7 @@
   "resume": "Resume",
   "hero": {
     "hello": "Hello I'm <strong> Adrian Luca</strong><br /><strong>Fullstack</strong> <span><strong class='outlined-text'>Developer</strong></span>",
-    "description": "I'm a 23-year-old web developer fluent in English, Romanian, Russian, and Italian. <br />My focus is on practical solutions that work for you.<br />Let's build a strong online presence together."
+    "description": "I'm a web developer fluent in English, Romanian, Russian, and Italian. <br />My focus is on practical solutions that work for you.<br />Let's build a strong online presence together."
   },
   "skills": {
     "my-skills": "My <strong>Skills</strong>"
@@ -44,7 +44,7 @@
   },
   "about-me": {
     "title": "About <strong>Me</strong>",
-    "first-paragraph": "As a 23-year-old web developer with a passion for crafting immersive digital experiences, I thrive on merging the technical and visual elements of digital products. User experience, precise design, and the art of writing clear, performant code are my cornerstones.",
+    "first-paragraph": "As a web developer with a passion for crafting immersive digital experiences, I thrive on merging the technical and visual elements of digital products. User experience, precise design, and the art of writing clear, performant code are my cornerstones.",
     "second-paragraph": "Embarking on my web development journey in 2020, I've embraced challenges and constantly evolved, staying at the forefront of the latest technologies. Now, with 3 years of experience, I specialize in building cutting-edge web applications using tools like React.js, Node.js, Next.js, TypeScript, Tailwindcss, and more.",
     "third-paragraph": "When I'm not busy coding, catch me rolling around on my skateboard, soaking up the street vibes. And when I need a breakfrom the tech world, I dive into fantasy books and manga—getting lost in epic tales and cool illustrations. Check out my GitHub for code stuff!"
   },
